@@ -32,9 +32,9 @@ with open(combination_data, 'r') as file:
         command_part3 = "--l1d_size="+ l1_data_size + " --l1i_size=" + l1_inst_size + " --l2_size=" + l2_data_size
         command_part4 = " --l1d_assoc="+ l1_data_aso_str + " --l1i_assoc=" + l1_ist_aso_str + " --l2_assoc=" + l2_data_aso_str + " --cacheline_size=" + l2_data_block_str
         #print(command_part1+command_part2+command_part3+command_part4)
-        #os.system(command_part1+command_part2+command_part3+command_part4)
+        os.system(command_part1+command_part2+command_part3+command_part4)  #command to actully run
         src_stats_path = benchmark_directory + "/m5out/stats.txt"
         dst_stats_path = benchmark_directory + "/cache_outputs/" + "/stats_" + str(i+1) + ".txt"
         shutil.copy(src_stats_path, dst_stats_path)
-        print('Copied stats file with default values ' + str(i) + '   iteration')
+        print('Copied stats file with default values ' + str(i+1 ) + '   iteration')
 
