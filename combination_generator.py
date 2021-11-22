@@ -1,5 +1,5 @@
 import math
-stat_path = 'stats.csv'
+stat_path = 'combinations.csv'
 block_values = [5,6]
 associativity = []
 l1_inst = [17,16]
@@ -15,9 +15,9 @@ for i in range (len(l2_data)):
         index_a2  = a2 - block_values[x]
         acc_l2_data_limit = int(math.log(index_a2, 2))
         l2_data_aso = []
-        for l in range (2):                                 #(acc_l2_data_limit + 1):
+        for l in range (3):                                 #(acc_l2_data_limit + 1):
             l2_data_aso.append(2 ** l)
-        l2_data_aso.append(index_a2)
+        #l2_data_aso.append(index_a2)
         print(l2_data_aso , " this is l2 associativity")
         for y in range(len(l2_data_aso)):
             for j in range (len(l1_data)):
@@ -35,15 +35,15 @@ for i in range (len(l2_data)):
                     acc_l1_data_limit = int(math.log(index_b, 2))
 
                     l1_ist_aso = []
-                    for l in range (2):#(acc_l1_ist_limit + 1):
+                    for l in range (3):#(acc_l1_ist_limit + 1):
                         l1_ist_aso.append(2**l)
-                    l1_ist_aso.append(index_a)
+                    #l1_ist_aso.append(index_a)
                     #l1_ist_aso.remove(0)
                     print(l1_ist_aso)
                     l1_data_aso = []
-                    for l in range (2) : # (acc_l1_data_limit + 1):
+                    for l in range (3) : # (acc_l1_data_limit + 1):
                         l1_data_aso.append(2**l)
-                    l1_data_aso.append(index_b)
+                    #l1_data_aso.append(index_b)
                     #l1_data_aso.remove(0)
                     print(l1_data_aso)
                     #print(" two loops done")

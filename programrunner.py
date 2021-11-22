@@ -3,8 +3,8 @@ import os
 import shutil
 benchmark_directory = "/home/johnj/gem5/m5out/benchmarks/458.sjeng"  #location of bench mark directory
 gem5_directory = '/home/johnj/gem5'    # location of the gem5  directory
-initial_count = 3
-final_count = 5
+initial_count = 350
+final_count = 355
 instruction_count = "1000"
 benchmark_location = benchmark_directory + "/src/benchmark"
 argument_location = benchmark_directory + "/data/test.txt"
@@ -12,6 +12,10 @@ output_directory = "/home/johnj/gem5/m5out/benchmarks/458.sjeng/m5out"
 combination_data = "combinations.csv"
 try:
     os.mkdir(benchmark_directory + "/cache_outputs")
+except OSError as error:
+    print("\n folder already exists neglecting command")
+try:
+    os.mkdir(benchmark_directory + "/cache_outputs/configuration_files")
 except OSError as error:
     print("\n folder already exists neglecting command")
 with open(combination_data, 'r') as file:
@@ -37,4 +41,10 @@ with open(combination_data, 'r') as file:
         dst_stats_path = benchmark_directory + "/cache_outputs/" + "/stats_" + str(i+1) + ".txt"
         shutil.copy(src_stats_path, dst_stats_path)
         print('Copied stats file with default values ' + str(i+1 ) + '   iteration')
+
+        # configuration files is stored
+        src_stats_path = benchmark_directory + "/m5out/config.ini"
+        dst_stats_path = benchmark_directory + "/cache_outputs/configuration_files" + "/config_" + str(i + 1) + ".ini"
+        shutil.copy(src_stats_path, dst_stats_path)
+        print('Copied config file with default values ' + str(i + 1) + '   iteration')
 
