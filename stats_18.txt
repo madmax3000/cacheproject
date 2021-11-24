@@ -374,7 +374,7 @@ system.l2.demandMissRate::cpu.data                  1                       # mi
 system.l2.demandMissRate::total                     1                       # miss rate for demand accesses (Ratio)
 system.l2.overallMissRate::cpu.inst                 1                       # miss rate for overall accesses (Ratio)
 system.l2.overallMissRate::cpu.data                 1                       # miss rate for overall accesses (Ratio)
-system.l2.overallMissRate::total                    1                       # miss rate for overall accesses (Ratio)
+system.l2.overallMissRate::total                    0.897554                       # miss rate for overall accesses (Ratio)
 system.l2.demandAvgMissLatency::cpu.inst 75489.436620                       # average overall miss latency ((Cycle/Count))
 system.l2.demandAvgMissLatency::cpu.data 78331.578947                       # average overall miss latency ((Cycle/Count))
 system.l2.demandAvgMissLatency::total    76628.691983                       # average overall miss latency ((Cycle/Count))

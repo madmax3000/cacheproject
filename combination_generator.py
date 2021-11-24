@@ -6,6 +6,8 @@ l1_inst = [17,16]
 l1_data = [13,14]
 l2_data = [20,19]
 value = 0
+f = open(stat_path, "w")
+f.close()
 for i in range (len(l2_data)):
     #print("first loop in",str(i))
     for x in range (len(block_values)):

@@ -1,0 +1,6 @@
+iteration no ,350, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,131072,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,4, l1_ist_aso_str,2,cpi_value ,1.000000102597052
+iteration no ,351, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,131072,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,4, l1_ist_aso_str,4,cpi_value ,1.000000102597052
+iteration no ,352, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,65536,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,1, l1_ist_aso_str,1,cpi_value ,1.00000010016354
+iteration no ,353, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,65536,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,1, l1_ist_aso_str,2,cpi_value ,1.00000010016354
+iteration no ,354, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,65536,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,1, l1_ist_aso_str,4,cpi_value ,1.00000010016354
+iteration no ,355, l2_data_size,524288,l2_associativity ,1,l2_block_size ,64,l1_data_size,16384,l1_inst_size,65536,l1_inst_block_size,64,l1_data_block_size,64,l1_data_asociativity,2, l1_ist_aso_str,1,cpi_value ,1.000000102597052
