@@ -3,12 +3,12 @@ import csv
 first_one = "system.cpu.dcache.overallMissRate::total     0.225653                       # miss rate for overall accesses (Ratio)" #just for viewing
 second_one = "system.cpu.icache.overallMissRate::total     0.104797                       # miss rate for overall accesses (Ratio)"
 third_one = "system.l2.overallMissRate::total                    1                       # miss rate for overall accesses (Ratio)"
-filepath = "stats_18.txt"
-stats_directory = "/home/johnj/gem5/m5out/benchmarks/458.sjeng/cache_outputs"
+#filepath = "stats_18.txt"
+stats_directory = "/home/johnj/Downloads/cache stats/cache_outputs_458"
 combinations_path = "combinations.csv"
 output_data = "outputs.csv"
-initial_count = 350
-final_count = 355
+initial_count = 1
+final_count = 432
 
 f = open(output_data, "w")
 f.close()
@@ -16,9 +16,9 @@ def cpi_calculator(filepath):
   with open(filepath, 'r') as file:
     filedata = file.read()
 
-  finaltag1 = "system.cpu.dcache.overallMissRate::total.*# miss rate for overall accesses \(Ratio\)$"
-  finaltag2 = "^system.cpu.icache.overallMissRate::total.*# miss rate for overall accesses \(Ratio\)$"
-  finaltag3 = "^system.l2.overallMissRate::total.*# miss rate for overall accesses \(Ratio\)$"
+  finaltag1 = "^system.cpu.dcache.overall_misses::total.*# number of overall misses$"
+  finaltag2 = "^system.cpu.icache.overall_misses::total.*# number of overall misses$"
+  finaltag3 = "^system.l2.overall_misses::total.*# number of overall misses$"
 
   value = re.split("\n", filedata)
   array1 = []

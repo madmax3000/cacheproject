@@ -2,9 +2,9 @@ import math
 stat_path = 'combinations.csv'
 block_values = [5,6]
 associativity = []
-l1_inst = [17,16]
-l1_data = [13,14]
-l2_data = [20,19]
+l1_inst = [17,16,14]
+l1_data = [13,14,15]
+l2_data = [20,19,18]
 value = 0
 f = open(stat_path, "w")
 f.close()
