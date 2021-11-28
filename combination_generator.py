@@ -2,9 +2,9 @@ import math
 stat_path = 'combinations.csv'
 block_values = [5,6]
 associativity = []
-l1_inst = [17,16,14]
-l1_data = [13,14,15]
-l2_data = [20,19,18]
+l1_inst = [13,14]
+l1_data = [16,17]
+l2_data = [19,20]
 value = 0
 f = open(stat_path, "w")
 f.close()
@@ -73,7 +73,7 @@ for i in range (len(l2_data)):
 
                             block_values_k = str(block_values[x])
                             f = open(stat_path, "a")
-                            f.write("iteration no ," + str(value) + "," +" l2_data_size," + l2_data_str + "B," + "l2_associativity ," + l2_data_aso_str + "," +  "l2_block_size ," + l2_data_block_str + "," + "l1_data_size,"+ l1_data_str + "B,"+ "l1_inst_size," + l1_inst_str + "B," + "l1_inst_block_size," + l1_inst_block_str + "," + "l1_data_block_size," + l1_data_block_str + "," + "l1_data_asociativity," + l1_data_aso_str +","+ " l1_ist_aso_str," + l1_ist_aso_str + "\n" )  # writing back into the file
+                            f.write("iteration no ," + str(value) + "," +" l2_data_size," + l2_data_str + "B," +  "l2_block_size ," + l2_data_block_str + ","   + "l1_inst_block_size," + l1_inst_block_str + "," + "l1_data_block_size," + l1_data_block_str + "," + "l2_associativity ," + l2_data_aso_str + "," + "l1_data_size,"+ l1_data_str + "B," + "l1_inst_size," + l1_inst_str + "B,"  + "l1_data_asociativity," + l1_data_aso_str +","+ " l1_ist_aso_str," + l1_ist_aso_str + "\n" )  # writing back into the file
                             f.close()
 
 

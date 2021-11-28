@@ -4,7 +4,7 @@ first_one = "system.cpu.dcache.overallMissRate::total     0.225653              
 second_one = "system.cpu.icache.overallMissRate::total     0.104797                       # miss rate for overall accesses (Ratio)"
 third_one = "system.l2.overallMissRate::total                    1                       # miss rate for overall accesses (Ratio)"
 #filepath = "stats_18.txt"
-stats_directory = "/home/johnj/Downloads/cache stats/cache_outputs_458"
+stats_directory = "/home/johnj/Downloads/cache_outputs_458/cache_outputs"
 combinations_path = "combinations.csv"
 output_data = "outputs.csv"
 initial_count = 1
@@ -84,13 +84,13 @@ for file in range(initial_count  ,final_count + 1):
   variables = row_list[file-1][3]
   #print(type(variables),"we were the initial terms ")
   term1 = re.search("\d+\.*\d*", str(row_list[file-1][3]))
-  term2 = re.search("\d+\.*\d*", str(row_list[file-1][9]))
-  term3 = re.search("\d+\.*\d*", str(row_list[file-1][11]))
+  term2 = re.search("\d+\.*\d*", str(row_list[file-1][13]))
+  term3 = re.search("\d+\.*\d*", str(row_list[file-1][15]))
 
   row_list[file-1][3] = term1.group()
-  row_list[file-1][9] = term2.group()
-  row_list[file-1][11] = term3.group()
-  printvariables_1 = row_list[file][3]
+  row_list[file-1][13] = term2.group()
+  row_list[file-1][15] = term3.group()
+  #printvariables_1 = row_list[file-1][3]
   #print(type(printvariables_1),"wems")
   pre_line = ",".join(row_list[file - 1])
   #print(pre_line)

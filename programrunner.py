@@ -3,9 +3,9 @@ import os
 import shutil
 benchmark_directory = "/home/johnj/gem5/m5out/benchmarks/458.sjeng"  #location of bench mark directory
 gem5_directory = '/home/johnj/gem5'    # location of the gem5  directory
-initial_count = 350
-final_count = 355
-instruction_count = "1000"
+initial_count = 1
+final_count = 432
+instruction_count = "100"
 benchmark_location = benchmark_directory + "/src/benchmark"
 argument_location = benchmark_directory + "/data/test.txt"
 output_directory = "/home/johnj/gem5/m5out/benchmarks/458.sjeng/m5out"
@@ -23,10 +23,10 @@ with open(combination_data, 'r') as file:
     row_list = list(reader)
     for i in range (initial_count - 1,final_count ):
         l2_data_size = row_list[i][3]
-        l2_data_aso_str = row_list[i][5]
-        l2_data_block_str = row_list[i][7]
-        l1_data_size = row_list[i][9]
-        l1_inst_size = row_list[i][11]
+        l2_data_aso_str = row_list[i][11]
+        l2_data_block_str = row_list[i][5]
+        l1_data_size = row_list[i][13]
+        l1_inst_size = row_list[i][15]
         #l1_inst_block_str = row_list[i][13]
         #l1_data_block_str = row_list[i][15]
         l1_data_aso_str = row_list[i][17]
