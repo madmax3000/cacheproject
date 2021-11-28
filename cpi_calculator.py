@@ -90,7 +90,7 @@ for file in range(initial_count  ,final_count + 1):
   row_list[file-1][3] = term1.group()
   row_list[file-1][13] = term2.group()
   row_list[file-1][15] = term3.group()
-  #printvariables_1 = row_list[file-1][3]
+  printvariables_1 = row_list[file-1][3]
   #print(type(printvariables_1),"wems")
   pre_line = ",".join(row_list[file - 1])
   #print(pre_line)
